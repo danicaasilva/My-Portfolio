@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sky Gallery | Danicaa Silva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Stars background -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="gallery.html" class="active">Sky Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="future.html">Future Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container gallery-container">
+    <section class="gallery-hero">
+      <h1>The Sky Gallery</h1>
+      <p>Moments of twilight, dusk, and celestial wonder—captured through my lens.</p>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+      <!-- Gallery Item -->
+      <div class="gallery-item fade-out">
+        <img src="images/sky1.jpg" alt="Sky Photo 1" onclick="openLightbox('images/sky1.jpg')" />
+      </div>
+      <div class="gallery-item fade-out">
+        <img src="images/sky2.jpg" alt="Sky Photo 2" onclick="openLightbox('images/sky2.jpg')" />
+      </div>
+      <div class="gallery-item fade-out">
+        <img src="images/sky3.jpg" alt="Sky Photo 3" onclick="openLightbox('images/sky3.jpg')" />
+      </div>
+      <div class="gallery-item fade-out">
+        <img src="images/sky4.jpg" alt="Sky Photo 4" onclick="openLightbox('images/sky4.jpg')" />
+      </div>
+      <!-- Add more images as needed -->
+    </section>
+
+    <section class="cta">
+      <a href="future.html" class="btn">Peek Into Future Interests</a>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Danicaa Silva</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
